@@ -1,0 +1,126 @@
+$regular = 'BentonSansRegular'
+$medium  = 'BentonSansMedium'
+$bold    = 'BentonSansBold'
+$color   = #FDB913
+flexCenter()
+	display flex
+	display -webkit-flex
+	align-items center
+flexStart()
+	display flex
+	display -webkit-flex
+	align-items start
+flexEnd()
+	display flex
+	display -webkit-flex
+	align-items flex-end
+transitionOpacity()
+	-webkit-transition opacity .3s linear
+	-moz-transition opacity .3s linear
+	-ms-transition opacity .3s linear
+	-o-transition opacity .3s linear
+	transition opacity .3s linear
+transitionWidth()
+	-webkit-transition width .3s linear
+	-moz-transition width .3s linear
+	-ms-transition width .3s linear
+	-o-transition width .3s linear
+	transition width .3s linear
+transitionMaxWidth()
+	-webkit-transition max-width .3s linear
+	-moz-transition max-width .3s linear
+	-ms-transition max-width .3s linear
+	-o-transition max-width .3s linear
+	transition max-width .3s linear
+transitionBgColor()
+	-webkit-transition background-color .3s linear
+	-moz-transition background-color .3s linear
+	-ms-transition background-color .3s linear
+	-o-transition background-color .3s linear
+	transition background-color .3s linear
+transitionTransform()
+	-webkit-transition transform .3s linear
+	-moz-transition transform .3s linear
+	-ms-transition transform .3s linear
+	-o-transition transform .3s linear
+	transition transform .3s linear
+absolute()
+	position absolute
+	top 0
+	left 0
+	right 0
+	bottom 0
+relative()
+	position relative
+	top 0
+	left 0
+	right 0
+	bottom 0
+body
+	margin 0
+	padding 0
+	overflow hidden
+	overflow-y scroll
+	font-family $regular
+	color #000000
+	background-color #FFFFFF
+img
+	width 100%
+p
+	margin 0
+.js-section
+	position relative
+	padding 40px 20px
+.js-header
+	transitionAll()
+	position fixed
+	top 0
+	width 100%
+	z-index 5
+	padding 5px 25px
+	color #FFFFFF
+	height 75px
+	background-color #000000
+	&.js-fixed
+		background-color $color
+	.js-header--container
+		flexCenter()
+		width 100%
+		max-width 1150px
+		margin auto
+		height 100%
+	img
+		width 100%
+		max-width 250px
+	.js-header--left
+		flexCenter()
+		width 100%
+		max-width 300px
+		justify-content flex-start
+	.js-header--right
+		flexCenter()
+		width 100%
+		justify-content flex-end
+		text-align right
+.js-flex
+	flexCenter()
+	justify-content center
+.js-flex--start
+	flexStart()
+	justify-content center
+.js-container
+	transitionMaxWidth()
+	height 100%
+	width 100%
+	max-width 1150px
+	margin auto
+/*SCROLL*/
+::-webkit-scrollbar
+	width 5px
+	height 5px
+::-webkit-scrollbar-track
+	background-color transparent
+	border-radius 10px
+::-webkit-scrollbar-thumb
+	background-color #AAAAAA
+	border-radius 10px
