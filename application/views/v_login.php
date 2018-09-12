@@ -17,45 +17,63 @@
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap/css/bootstrap.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>mdl/material.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>material-icons.css?v=<?php echo time();?>">
-        <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>metric.css?v=<?php echo time();?>">
+        <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>openSans.css?v=<?php echo time();?>">
     	<link rel="stylesheet"    href="<?php echo RUTA_CSS?>m-p.min.css?v=<?php echo time();?>">
     	<link rel="stylesheet"    href="<?php echo RUTA_CSS?>style.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_CSS?>admin.css?v=<?php echo time();?>">
     </head>
     <body>
-        <div class="js-header">
+        <!-- <div class="js-header">
             <div class="js-header--left">
                 <img src="<?php echo RUTA_IMG?>logo/hpe-intel.png">
             </div>
             <div class="js-header--right">
                 <p>HPE LAC Value & Growth Channels Warriors</p>
             </div>
-        </div>
-        <section class="js-section js-height">
+        </div> -->
+        <section class="js-height">
             <div class="js-fondo"></div>
             <div class="js-container js-flex">
                 <div class="js-login">
-                    <h2>Acceso a la Herramienta</h2>
-                    <div class="col-xs-12 js-input m-0">
-                        <label for="usuario">Usuario</label>
-                        <input type="text" id="usuario" onkeyup="verificarDatos(event);">
+                    <div class="js-login__title">
+                        <h2>Heroes 2.0</h2>
+                        <p>Bienvenido de vuelta H&eacute;roe</p>
                     </div>
-                    <div class="col-xs-12 js-input m-0">
-                        <label for="password">Contrase&ntilde;a</label>
-                        <input type="password" id="password" onkeyup="verificarDatos(event);">
+                    <div class="js-login__contenido">
+                        <div class="js-input">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="correo">
+                                <label class="mdl-textfield__label" for="correo">Correo</label>
+                            </div>
+                        </div>
+                        <div class="js-input">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="password" id="password">
+                                <label class="mdl-textfield__label" for="password">Contrase&ntilde;a</label>
+                            </div>
+                        </div>
+                        <div class="js-login__contenido--flex">
+                            <div class="js-radio text-left">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="remember">
+                                    <input type="checkbox" id="remember" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Recu&eacute;rdame</span>
+                                </label>
+                            </div>
+                            <a href="">Olvid&eacute; mi contrase&ntilde;a</a>
+                        </div>
                     </div>
-                    <div class="col-xs-12 js-radio">
-                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="remember">
-                            <input type="checkbox" id="remember" class="mdl-checkbox__input">
-                            <span class="mdl-checkbox__label">Remember me</span>
-                        </label>
-                    </div>
-                    <div class="col-xs-12 p-0">
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button js-button--login" onclick="ingresar()">Login</button>
+                    <div class="js-login__actions">
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button js-button--default" onclick="ingresar()">Registrase</button>
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button" onclick="ingresar()">Iniciar sesi&oacute;n</button>
                     </div>
                 </div>
             </div>
         </section>
+        <footer class="js-section">
+            <div class="js-container">
+                
+            </div>
+        </footer>
         <script src="<?php echo RUTA_JS?>jquery-3.2.1.min.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_JS?>jquery-1.11.2.min.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_PLUGINS?>bootstrap/js/bootstrap.min.js?v=<?php echo time();?>"></script>

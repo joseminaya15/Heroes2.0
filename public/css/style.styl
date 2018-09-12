@@ -1,7 +1,8 @@
-$regular = 'BentonSansRegular'
-$medium  = 'BentonSansMedium'
-$bold    = 'BentonSansBold'
-$color   = #FDB913
+$light   = 'OpenSansLight'
+$regular = 'OpenSansRegular'
+$medium  = 'OpenSansMedium'
+$bold    = 'OpenSansBold'
+$color   = #FF8300
 flexCenter()
 	display flex
 	display -webkit-flex
@@ -62,49 +63,67 @@ body
 	overflow hidden
 	overflow-y scroll
 	font-family $regular
-	color #000000
+	color #545454
 	background-color #FFFFFF
 img
 	width 100%
 p
 	margin 0
+label
+	font-weight 100
 .js-section
 	position relative
-	padding 40px 20px
+	padding 20px
+.js-height
+	height 100vh
 .js-header
-	transitionAll()
-	position fixed
+	flexCenter()
+	position relative
 	top 0
 	width 100%
 	z-index 5
-	padding 5px 25px
-	color #FFFFFF
-	height 75px
-	background-color #000000
-	&.js-fixed
-		background-color $color
+	padding 15px 25px
+	background-color #FFFFFF
+	box-shadow 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
 	.js-header--container
 		flexCenter()
 		width 100%
 		max-width 1150px
 		margin auto
 		height 100%
-	img
-		width 100%
-		max-width 250px
-	.js-header--left
+	.js-header__left
 		flexCenter()
 		width 100%
 		max-width 300px
 		justify-content flex-start
-	.js-header--right
+		img
+			max-width 100px
+	.js-header__right
 		flexCenter()
 		width 100%
 		justify-content flex-end
 		text-align right
+		img
+			max-width 200px
 .js-flex
 	flexCenter()
 	justify-content center
+	.js-flex__left
+		flexCenter()
+		width 100%
+		justify-content flex-start
+	.js-flex__right
+		flexCenter()
+		width 100%
+		justify-content flex-end
+.js-login__contenido
+	.js-flex
+		.js-input
+			width 100%
+			&:nth-child(1)
+				margin-right 10px
+			&:nth-child(2)
+				margin-left 10px
 .js-flex--start
 	flexStart()
 	justify-content center
@@ -114,6 +133,108 @@ p
 	width 100%
 	max-width 1150px
 	margin auto
+.js-login
+	text-align center
+	max-width 400px
+	width 100%
+	.js-login__title
+		h2
+			font-size 40px
+			line-height 42px
+			margin 10px 0
+			color #FF8300
+			font-family $bold
+			letter-spacing 5px
+		p
+			font-size 18px
+			line-height 20px
+			color #A5A6AC
+	.js-login__contenido
+		.js-login__contenido--flex
+			margin 20px 0
+			flexCenter()
+			justify-content center
+			.js-radio
+				width 100%
+			a
+				width 100%
+				color #545454
+	.js-login__actions
+		flexCenter()
+		margin 30px 0
+		justify-content center
+		.js-button
+			width 100%
+.js-button
+	margin 0 10px
+	text-transform none
+	font-family $medium
+	box-shadow none
+	background-color $color
+	border-radius 5px
+	border 1px solid $color
+	padding 0 20px
+	height 42px
+	color #FFFFFF
+	&.js-button--default
+		background-color transparent
+		border 1px solid #545454
+		color #545454
+.js-card
+	width 100%
+	box-shadow 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+	margin 10px 0
+	padding 15px
+	background-color #FFFFFF
+	.js-card__title
+		h2
+			font-size 20px
+			line-height 22px
+			margin 10px 0
+			font-family $medium
+			color #000000
+footer
+	background-color #F3F3F4
+/*MATERIAL DESIGN*/
+.mdl-textfield
+	width 100%
+	&.is-dirty
+	&.is-focused
+		.mdl-textfield__label
+			color $color
+	.mdl-textfield__label
+		color #545454
+		&:after
+			bottom 15px
+			background-color $color
+.mdl-layout__drawer
+	.mdl-navigation
+		background-color #FFFFFF
+		margin 0 20px
+		h2
+			font-size 22px
+			line-height 24px
+			color $color
+			font-family $bold
+			text-align center
+		.mdl-navigation__link
+			padding 12px 20px
+			text-decoration none
+			position relative
+			height 100%
+			i
+				vertical-align middle
+				margin-right 10px
+				color #576271
+			.js-active
+				background-color $color
+				width 6px
+				height 100%
+				position absolute
+				left 0
+				top 0
+.mdl-layout__content
+	background-color #F1F3F5
 /*SCROLL*/
 ::-webkit-scrollbar
 	width 5px
