@@ -156,7 +156,10 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <p></p>
+                            <div class="js-observaciones">
+                                <p>*El monto del negocio depende de la geograf&iacute;a  y el tama&ntilde;o del mismo Market A: Brasil, M&eacute;xico, Market B: Argetina, Chile, Colombia, Per&uacute; Market C: Rest of LAC countries.</p>
+                                <p>**Los Postings y videos ser&aacute;n evaluados por los especialistas para determinar el puntaje.</p>
+                            </div>
                         </div>  
                     </div>
                 </div>
