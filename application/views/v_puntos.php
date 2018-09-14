@@ -56,190 +56,108 @@
             <main class="mdl-layout__content">
                 <section class="js-section">
                     <div class="js-container">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <div class="col-sm-6">
-                                    <div class="js-card">
-                                        <div class="js-card__title js-flex">
-                                            <div class="js-flex__left">
-                                                <h2>Ranking Trimestral - Q1</h2>
-                                            </div>
-                                            <div class="js-flex__right">
-                                                <div class="js-select">
-                                                    <select class="selectpicker" name="" id="" title="General">
-                                                        <option>General1</option>
-                                                        <option>General2</option>
-                                                        <option>General3</option>
-                                                    </select>
-                                                </div>
-                                            </div>                                            
-                                        </div>
-                                        <div class="js-flex">
-                                            <div class="js-">
-                                                
-                                            </div>
-                                        </div>
-                                    </div> 
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="js-card">
-                                        <div class="js-card__title js-flex">
-                                            <div class="js-flex__left">
-                                                <h2>Ranking Trimestral - H1</h2>
-                                            </div>
-                                            <div class="js-flex__right">
-                                                <div class="js-select">
-                                                    <select class="selectpicker" name="" id="" title="por País">
-                                                        <option>País1</option>
-                                                        <option>País2</option>
-                                                        <option>País3</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="js-flex">
-                                            <div class="js-">
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="js-card">
+                            <div class="js-title">
+                                <h2>Gu&iacute;a de Puntos</h2>
+                                <p>Conoce el puntaje correspondiente a las actividades del programa.</p>
                             </div>
-                            <div class="col-xs-12">
-                                <div class="col-sm-6">
-                                    <div class="js-card">
-                                        <div class="js-card__title js-flex">
-                                            <div class="js-flex__left">
-                                                <p>&Uacute;ltimas 5 actividades</p>
-                                            </div>
-                                        </div>
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Oportunidad</th>
-                                                        <th>Actividad</th>
-                                                        <th>Puntos</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Quiz resuelt</td>
-                                                        <td>Estrategia</td>
-                                                        <td>5</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Mineria</td>
-                                                        <td>Batalla</td>
-                                                        <td>5</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div> 
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="js-card">
-                                        <div class="js-card__title js-flex">
-                                            <div class="js-flex__left">
-                                                <p>Mis Publicaciones</p>
-                                            </div>
-                                            <div class="js-flex__right">
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Documento 01</td>
-                                                        <td>PDF</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Documento 02</td>
-                                                        <td>Video</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Documento 03</td>
-                                                        <td>Excel</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="js-subtitle">
+                                <h2>Medici&oacute;n Trimestral y Semestral</h2>
                             </div>
-                            <div class="col-xs-12">
-                                <div class="col-sm-6">
-                                    <div class="js-card">
-                                        <div class="js-card__title js-flex">
-                                            <div class="js-flex__left">
-                                                <p>Mis Certificaciones</p>
-                                            </div>
-                                            <div class="js-flex__right">
-                                                <p>Fecha</p>
-                                            </div>
-                                        </div>
-                                        <table class="table">
-                                            <tbody>
-                                                <tr>
-                                                    <td>Exam HPE6-A15 Aruba</td>
-                                                    <td class="text-right">22-02-18</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Certified ClearPass Professional 6.5</td>
-                                                    <td class="text-right">22-04-18</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Exam HPE6-A15 Aruba</td>
-                                                    <td class="text-right">01-06-18</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Certified ClearPass Professional 6.5</td>
-                                                    <td class="text-right">15-06-18</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div> 
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="js-card">
-                                        <div class="js-card__title js-flex">
-                                            <div class="js-flex__left">
-                                                <p>Mis Datos de Contacto</p>
-                                            </div>
-                                            <div class="js-flex__right">
-                                                
-                                            </div>
-                                        </div>
-                                        <table class="table">
-                                            <tbody>
-                                                <tr>
-                                                    <td>País</td>
-                                                    <td>Perú</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Org.</td>
-                                                    <td>Merino SAC</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Sede</td>
-                                                    <td>Lima</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Ciudad</td>
-                                                    <td>Lima</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>email</td>
-                                                    <td>maurmerino@gmail.com</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th class="js-bg-gris">ITEM</th>
+                                            <th class="js-bg-gris">DESCRIPCI&Oacute;N</th>
+                                            <th class="js-bg-gris">PUNTAJE</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Reporte Negocio Clearpass</td>
+                                            <td>
+                                                <ul>
+                                                    <li>Reportar el # de oportunidad de SFDC donde haya Clearpass incluido</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <ul class="js-color-red">
+                                                    <li>50 Puntos</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cierre Negocio Clearpass*</td>
+                                            <td>
+                                                <ul>
+                                                    <li>Apoyar el cierre del negocio reportado donde Clearpass estuvo presente (Won SFDC)</li>
+                                                    <li>Puntaje depende tama&ntilde;o del monto cerrado</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <ul class="js-color-red">
+                                                    <li>200 Puntos</li>
+                                                    <li>250 Puntos</li>
+                                                    <li>300 Puntos</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Publicaciones de informaci&oacute;n**</td>
+                                            <td>
+                                                <ul>
+                                                    <li>Posteo en el idioma nativo en Airheads</li>
+                                                    <li>Video b&aacute;sico en Youtube Demo Clearpass</li>
+                                                    <li>Video avanzado en Youtube Demo Clearpass</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <ul class="js-color-red">
+                                                    <li>25 Puntos</li>
+                                                    <li>50 Puntos</li>
+                                                    <li>75 Puntos</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pruebas de Conocimiento</td>
+                                            <td>
+                                                <ul>
+                                                    <li>Responder las trivias, quizzes o retos propuestos por los especialistas de Clearpass</li>
+                                                    <li>Premio a los tres primeros en contestar</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <ul class="js-color-red">
+                                                    <li>50 Primero</li>
+                                                    <li>25 Segundo</li>
+                                                    <li>10 Tercero</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Webinars y Entrenamiento</td>
+                                            <td>
+                                                <ul>
+                                                    <li>Participar al webinar > 80%</li>
+                                                    <li>Mantener Atenci&oacute;n en el Webinar > 80% (Pantalla Activa)</li>
+                                                    <li>Contestar preguntas conocimientos (m&iacute;nimo 5, m&aacute;ximo 10 con valor de 5 puntos cada una)</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <ul class="js-color-red">
+                                                    <li>20 Puntos</li>
+                                                    <li>30 Puntos</li>
+                                                    <li>50 Puntos</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                        </div>
+                            <p></p>
+                        </div>  
                     </div>
                 </div>
             </main>
