@@ -12,15 +12,17 @@ function ingresar() {
 		return;	
 	}
 	$.ajax({
-		data : {},
-		url  : '',
+		data : {correo 	 : correo,
+				password : password },
+		url  : 'login/ingresar',
 		type : 'POST'
 	}).done(function(data){
 		try{
 			data = JSON.parse(data);
 			if(data.error == 0) {
-				('.js-input').val('');
-				location.href('');
+	        	location.href = data.location;
+				$('.mdl-textfield__input').val('');
+				$('.mdl-textfield').removeClass('is-dirty');
 			} else {
 				toastr.remove();
 				msj('error', data.error);

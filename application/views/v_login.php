@@ -63,7 +63,7 @@
                         </div>
                     </div>
                     <div class="js-login__actions">
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button js-button--default" onclick="ingresar()">Registrase</button>
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button js-button--default"><a href="#register">Registrarse</a></button>
                         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button" onclick="ingresar()">Iniciar sesi&oacute;n</button>
                     </div>
                 </div>

@@ -38,18 +38,23 @@ class Register extends CI_Controller {
 			$pass		= $this->input->post('pass');
 			$confirm	= $this->input->post('confirm');
 			$termino	= ($this->input->post('termino') == true) ? 1 : 0;
-			$arrayInsert= array ('nombre' 	=> $nombre,
-								 'apellido' => $apellido,
-								 'username' => $usuario,
-								 'pass' 	=> $pass,
-								 'rep_pass' => $confirm,
-								 'email' 	=> $email,
-								 'terminos' => $termino,
-								 'active' 	=> 1,
-								 'type'		=> 1);
-			$this->M_datos->insertHeroe($arrayInsert, 'users');
-			$data['error'] = EXIT_SUCCESS;
-			$data['msj'] = 'Registro exitoso';
+			$verifica 	= $this->M_datos->verificaUsuario($email);
+			if(count($verifica) == 0) {
+				$arrayInsert= array ('nombre' 	=> $nombre,
+									 'apellido' => $apellido,
+									 'username' => $usuario,
+									 'pass' 	=> $pass,
+									 'rep_pass' => $confirm,
+									 'email' 	=> $email,
+									 'terminos' => $termino,
+									 'active' 	=> 1,
+									 'type'		=> 1);
+				$this->M_datos->insertHeroe($arrayInsert, 'users');
+				$data['error'] = EXIT_SUCCESS;
+				$data['msj'] = 'Registro exitoso';
+			} else {
+				$data['msj'] = 'Correo ya registrado';
+			}
 		} catch(Exception $e) {
            $data['msj'] = $e->getMessage();
         }
