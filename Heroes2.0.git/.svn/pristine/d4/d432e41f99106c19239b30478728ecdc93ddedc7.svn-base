@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|uploads|images|utils|public|robots\.txt)
+RewriteRule ^(.*)$ /Heroes2.0/index.php/$1 [L]
