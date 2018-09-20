@@ -32,27 +32,11 @@
             </div>
         </div>
         <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
-            <div class="mdl-layout__drawer">
-                <div class="js-perfil">
-                    <div class="js-perfil__title">
-                        <img src="">
-                    </div>
-                    <div class="js-perfil__contenido">
-                        <img src="">
-                    </div>
-                </div>
-                <span class="mdl-layout-title">Title</span>
-                <nav class="mdl-navigation">
-                    <h2>Tyler Wain</h2>
-                    <a class="mdl-navigation__link" href="Dashboard"><i class="mdi mdi-equalizer"></i>Dashboard</a>
-                    <a class="mdl-navigation__link" href="Actividades"><i class="mdi mdi-event_note"></i>Actividades</a>
-                    <a class="mdl-navigation__link" href="Puntos"><i class="mdi mdi-assignment"></i>Gu&iacute;a de puntos</a>
-                    <a class="mdl-navigation__link" href="Premios"><i class="mdi mdi-stars"></i>Premios</a>
-                    <a class="mdl-navigation__link" href="Compartir"><i class="mdi mdi-share"></i>Compartir</a>
-                    <a class="mdl-navigation__link" href="Ranking"><div class="js-active"></div><i class="mdi mdi-trending_up"></i>Ranking</a>
-                    <a class="mdl-navigation__link" href="Noticias"><i class="mdi mdi-drafts"></i>What's New!</a>
-                </nav>
-            </div>
+             <?php
+       $dato['active']="Ranking";
+       $this->load->view('template/left-menu', $dato); 
+       ?>
+            
             <main class="mdl-layout__content">
                 <section class="js-section">
                     <div class="js-container">

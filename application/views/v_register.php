@@ -29,7 +29,7 @@
                 <div class="js-login">
                     <div class="js-login__title">
                         <h2>Heroes 2.0</h2>
-                        <p>Bienvenido de vuelta H&eacute;roe</p>
+                        <p>Bienvenido de vuelta Héroe</p>
                     </div>
                     <div class="js-login__contenido">
                         <div class="js-flex">

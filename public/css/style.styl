@@ -4,6 +4,20 @@ $medium  = 'OpenSansMedium'
 $bold    = 'OpenSansBold'
 $color   = #FF8300
 $default = #9FD4C9
+
+$red 	= #ff0000
+$green	= #3CC480
+
+.text
+	&-red
+		color $red!important
+	&-green
+		color $green
+
+.pd
+	&-top
+		&-15
+			padding-top 15px
 flexCenter()
 	display flex
 	display -webkit-flex
@@ -68,8 +82,6 @@ body
 	background-color #FFFFFF
 img
 	width 100%
-p
-	margin 0
 label
 	font-weight 100
 .js-section
@@ -210,6 +222,7 @@ label
 	padding 15px
 	background-color #FFFFFF
 	.js-card__title
+		padding-bottom 15px
 		h2
 			font-size 20px
 			line-height 22px
@@ -235,6 +248,7 @@ footer
 		background-color #FFFFFF
 		margin 0 20px
 		h2
+			margin 15px
 			font-size 22px
 			line-height 24px
 			color $color
@@ -245,17 +259,13 @@ footer
 			text-decoration none
 			position relative
 			height 100%
+			&.active
+				border-left 6px solid $color
 			i
 				vertical-align middle
 				margin-right 10px
 				color #576271
-			.js-active
-				background-color $color
-				width 6px
-				height 100%
-				position absolute
-				left 0
-				top 0
+			
 .mdl-layout__content
 	background-color #F1F3F5
 /*SCROLL*/
@@ -268,3 +278,137 @@ footer
 ::-webkit-scrollbar-thumb
 	background-color #AAAAAA
 	border-radius 10px
+.js-fondo
+	width 100%
+.ri-login
+	padding-top 35px
+	padding-left 10px
+	padding-right 10px
+.ri-logos
+	background-repeat no-repeat
+	background-position left center
+	background-size 80% 100%
+	height 90px
+	display flex
+	justify-content space-between
+	align-items center
+	.ri-logo-left
+		margin 30px 50px
+		width 100px
+	.ri-logo-right
+		margin 30px 50px
+		width 160px
+		@media (max-width: 767px)
+			margin 30px 10px
+			width 140px
+		@media (max-width: 480px)
+			margin 30px 10px
+			width 140px
+.mdl-layout__drawer
+	
+	.js-perfil
+		display flex
+		justify-content center
+		text-align center
+		.js-perfil__title
+			width 100%
+			position absolute
+		.js-perfil__contenido
+			top 30px
+			position relative		
+			width 100px
+			height 100px
+			border-radius 50%
+			border 2px solid white
+		.js-perfil__idioma
+			font-size 11px
+			font-family $bold
+			background-color $color
+			padding 3px 8px
+			border-radius 10px
+			bottom 5px
+			right -20px
+			color white
+			position absolute
+			z-index 5
+	.mdl-layout-title
+		margin-top 15px
+		padding 0
+		text-align center
+		position relative
+		font-size 14px
+		color white
+		z-index 1
+	.mdl-navigation	
+		position relative
+		z-index 1
+.puntuaciones
+	display flex
+	justify-content space-around
+.puntuacion	
+	.p-titulo
+		padding-bottom 20px
+		font-size 18px
+		font-family $medium
+	.p-puntaje
+		padding-bottom 5px
+		font-size 30px
+		font-family $bold
+		color $color
+	.tendencia
+		font-weight bold
+		padding-bottom 10px
+
+.table-dashboard
+	width 100%
+	max-width 100%
+	margin-bottom 20px
+	&>thead
+		&>tr
+			background-color rgba(#9ED2C6, 0.2)
+			font-family $bold
+			font-size 15px
+	& > tbody
+		& > tr
+			&:nth-of-type(even)
+				background-color rgba(#9ED2C6, 0.2)
+.table-dashboard-inv
+	width 100%
+	max-width 100%
+	margin-bottom 20px
+	&>thead
+		&>tr
+			background-color rgba(#9ED2C6, 0.2)
+			font-family $bold
+			font-size 15px
+	& > tbody
+		& > tr
+			&:nth-of-type(odd)
+				background-color rgba(#9ED2C6, 0.2)
+
+.td-center
+	vertical-align middle!important
+	
+.table-red
+	&>tbody
+		&>tr
+			&:nth-of-type(even)
+				background-color rgba(#F45746, 0.1)			
+			&:first-child
+				background-color #F45746
+				color white
+			&>td
+				text-align center
+				
+.table-grey
+	&>tbody
+		&>tr
+			&:nth-of-type(even)
+				background-color rgba(#545454, 0.1)
+			&:first-child
+				background-color #545454
+				color white
+			&>td
+				text-align center
+				
+	
